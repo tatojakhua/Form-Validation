@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for testing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="sampleForm" action="#" method="POST" autocomplete="off">
+        <p>
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            inputmode="text"
+            id="fullname"
+            name="fullname"
+            enterkeyhint="next"
+            autocomplete="off"
+            placeholder="Enter your full name"
+            required
+          />
+          <span class="instructions"><span class="errMessage"></span></span>
+        </p>
+          <p>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              inputmode="email"
+              id="email"
+              name="email"
+              enterkeyhint="next"
+              autocomplete="off"
+              placeholder="Enter your email address"
+              required
+            />
+            <span class="instructions"><span class="errMessage"></span></span>
+          </p>
+          <p>
+            <label for="pass">Password</label>
+            <input
+              type="password"
+              id="pass"
+              name="pas"
+              enterkeyhint="send"
+              autocomplete="off"
+              placeholder="password"
+              maxlength="10"
+              required>
+              <span id="psw"></span>
+            <span class="instructions"
+              ><span id="errMessage"></span>
+              <span id="upper">At least ONE uppercase letter</span>
+              <span id="lower">At least ONE lowercase letter</span>
+              <span id="num">At least ONE number</span>
+              <span id="len">At least 10 characters long</span>
+              <span id="invalid"
+                >Only allowed special characters are ! @ # $ % ^ & * . , ? ; :
+              </span>
+            </span>
+          </p>
+          <p>
+            <label for="cell">Cellphone</label>
+            <input
+              type="number"
+              inputmode="numeric"
+              id="cell"
+              name="cell"
+              enterkeyhint="next"
+              autocomplete="off"
+              placeholder="include your area code"
+              maxlength="12"
+              required
+            /><!-- input type=number adds the stepper -->
+            <span class="instructions"><span class="errMessage"></span></span>
+          </p>
+          <p>
+            <label for="regcode">One-time-code</label>
+            <input
+              type="number"
+              inputmode="numeric"
+              id="regcode"
+              autocomplete="off"
+              enterkeyhint="next"
+              placeholder="Enter your one time code here"
+              minlength="12"
+              required
+            />
+            <span class="instructions"><span class="errMessage"></span></span>
+          </p>
+          <p>
+            <label for="pets">Number of Pets</label>
+            <input
+              type="number"
+              inputmode="numeric"
+              id="pets"
+              name="pets"
+              enterkeyhint="next"
+              autocomplete="off"
+              min="0"
+              max="10"
+              maxlength="10"
+              step="1"
+            /><!-- input type=number adds the stepper -->
+            <span class="instructions"><span class="errMessage"></span></span>
+          </p>
+        <p>
+            <button id="btnSend">Send</button>
+          </p>
+        </form>
+    <script src="javascript.js"></script>
+</body>
+</html>
